@@ -4,6 +4,7 @@ import './App.css';
 import { NavBar } from './copmonents/Navbar';
 import {About} from "./copmonents/About"
 import { Skills } from './copmonents/Skills';
+import { Projects } from './copmonents/Projects';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <About />
       <Skills />
+      <Projects />
     </>
     
   );

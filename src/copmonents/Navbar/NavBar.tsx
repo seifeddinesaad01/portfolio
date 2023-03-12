@@ -17,7 +17,7 @@ const NavBar = () => {
             width > 900 ?  <ul>
         {links.map((link,index)=>{
         return (
-            <a href="#" key={index}><li>{link}</li></a>
+            <a href={`#${link}`} key={index}><li>{link}</li></a>
         )
 })}</ul> : <div className="menu" onClick={()=>setShowSidebar(!showSidebar)}><AiOutlineMenu style={iconStyle}/>
     </div>
