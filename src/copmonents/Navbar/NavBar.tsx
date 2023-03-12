@@ -23,7 +23,7 @@ const NavBar = () => {
     </div>
         
            } 
-      <Sidebar display={showSidebar}/>
+      <Sidebar display={showSidebar} handleDrawer ={setShowSidebar}/>
     </nav>
   )
 }

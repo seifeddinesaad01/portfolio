@@ -1,3 +1,57 @@
 .show{
-    display: none;
+    position: absolute;
+    top: 0;
+    transition:ease 1s ;
+    background-color: rgb(202, 199, 7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    & > .head{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      & > h1{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        span{
+            color: white;
+        }
+    }
+    }
+    .list__items{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      & > a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 550;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        & > li:hover{
+           transition: ease 0.3s;
+        color: whitesmoke;
+      
+    }
+        & > a:focus, a:active {
+        outline: none;
+    }
+    
+      }
+
+      
+    }
+}
+.init{
+  position: absolute;
+  left: -100%;
 }
