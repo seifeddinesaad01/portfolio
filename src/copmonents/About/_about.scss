@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to right,#656161, rgb(0, 0, 0));
+    color: #fff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: calc(100vh - 12vh);
+    gap: 4rem;
+    .left{
+        width: 60%;
+        p{
+            font-size: 1.2rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            line-height: 25px;
+        }
+        .name{
+            display: flex;
+            gap: 0.4rem;
+        }
+        & > h1{
+                color: white;
+                font-size: 2rem;
+            }
+          .waviy span {
+            position: relative;
+             display: inline-block;
+             font-size: 2rem;
+             line-height: 2px;
+            color: yellow ;
+            text-transform: uppercase;
+            animation: flip 2s infinite;
+            animation-delay: calc(.2s * var(--i))
+          }
+          @keyframes flip {
+            0%,80% {
+              transform: rotateY(360deg) 
+            }
+          }
+         
+        }
+        .right{
+            width: 40%;
+            .circle{
+                height: 18rem;
+                width: 18rem;
+                border-radius: 50%;
+                border: 1px solid yellow;
+                
+                & >img{
+                    height: 17rem;
+                    width: 17rem;
+                    border-radius: 50%;
+                    padding-left: 0.5rem;
+                    padding-top: 0.5rem;
+                }
+                
+            }
+        }
+}
+
+// Responsive:
+@media only screen and (max-width: 900px) {
+    .container {
+       flex-direction: column-reverse;
+       height: 100%;
+       .right{
+        padding-top: 3.5rem;
+       }
+    }
+  }
