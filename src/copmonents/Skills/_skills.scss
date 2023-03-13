@@ -1,8 +1,13 @@
-.skills__container{
-    height: calc(100vh - (21vh));
-    display: grid;
-    padding: 2rem;
-    grid-template-columns: repeat(auto-fill,minmax(289.86px,1fr));
-    background-color: black;
-    background-image: linear-gradient(to right,#656161, rgb(0, 0, 0));
+.skills__container {
+  height: calc(100vh - (20vh));
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(289.86px, 1fr));
+  background-color: black;
+  background-image: linear-gradient(to right, #656161, rgb(0, 0, 0));
+}
+@media only screen and (max-width: 950px) {
+  .skills__container {
+    height: 100%;
+  }
 }

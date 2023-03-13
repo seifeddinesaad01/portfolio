@@ -1,20 +1,21 @@
-.skill__card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1.5rem;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 8px;
-    margin: 1rem;
-    border: 5px solid yellow;
-    cursor: pointer;
-    transition: ease 0.5s;
-    img{
-        height: 100px;
-    }
-    &:hover{
-        transform: scale(1.1);
-    }
+.skill__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 1rem;
+  // border: 5px solid yellow;
+  cursor: pointer;
+  transition: ease 0.5s;
+  height: 12rem;
+  img {
+    height: 100px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
 }

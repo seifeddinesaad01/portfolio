@@ -1,15 +1,18 @@
-import React from 'react'
-interface Iskills{
-name:string;
-image:string;
+import React from "react";
+import ProgressBar from "../ProgressBar/ProgressBar";
+interface Iskills {
+  name: string;
+  image: string;
+  progress: number;
+  bgColor: string;
 }
-const SkillCard = ({name,image}:Iskills) => {
+const SkillCard = ({ name, image, progress, bgColor }: Iskills) => {
   return (
     <div className="skill__card">
-        <img src={image} alt="name" />
-        {/* <p>{name}</p> */}
-    </div>
-  )
-}
+      <img src={image} alt="name" />
+      <ProgressBar progress={progress} bgColor={bgColor} />
+    </div>َ
+ذ  );
+};
 
 export default SkillCard;
