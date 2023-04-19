@@ -11,8 +11,7 @@ const SkillCard = ({ name, image, progress, bgColor }: Iskills) => {
     <div className="skill__card">
       <img src={image} alt="name" />
       <ProgressBar progress={progress} bgColor={bgColor} />
-    </div>َ
-ذ  );
+    </div>  );
 };
 
 export default SkillCard;
